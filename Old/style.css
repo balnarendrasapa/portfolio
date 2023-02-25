@@ -1,0 +1,52 @@
+body{
+	font-family: sans-serif;
+	background-color: #D3D3D3;
+}
+.image-css{
+	height: 150px;
+	width: 250px;
+	float: left;
+}
+.div1{
+	background-color: #FAEBD7;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-style: solid;
+}
+h1{
+	text-align: center;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.u-list{
+	line-height: 200%;
+}
+hr{
+	border: 1.5px solid black;
+}
+.Pro-image{
+	height: 400 px;
+	width: 200px;
+}
+img{
+	float: right;
+	margin-top: 25px;
+	margin-right: 70px;
+}
+.intro{
+	margin-left: 50px;
+	margin-right: 350px;
+	line-height: 150%;
+
+}
+.indent{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.nutshell{
+	line-height: 150%;
+}
+.social{
+	line-height: 150%;
+}
