@@ -1,8 +1,11 @@
 # Navigate to docs_skeleton directory
 cd ./docs/docs_skeleton
 
+# Install Yarn
+npm install -g yarn
+
 # Install Node.js dependencies
-yarn install --frozen-lockfile --non-interactive
+npx yarn install --frozen-lockfile --non-interactive
 
 # Create a docs folder
 mkdir -p ./docs
@@ -14,7 +17,7 @@ cp -r ../files/** ./docs/
 nbdoc_build
 
 # Build the project
-yarn build
+npx yarn build
 
 # Navigate back to root directory
 cd ../..
