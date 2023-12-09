@@ -21,9 +21,8 @@
 ## Running the project locally
 
 > [!NOTE]  
-> use `./build_script.ps1` instead of `./build_script.sh` if you are using windows and powershell
+> use `./script.ps1` instead of `./script.sh` if you are using windows and powershell
 
-- run `./build_script.sh build` to build the static content.
-- run `./build_script.sh rebuild` to rebuild the static content.
-- run `./build_script.sh serve` to serve the static content on localhost.
+- run `./script.sh install` to install dependencies of site.
+- run `./script.sh run`.
 - open `localhost:3000/portfolio/` to see the site.
