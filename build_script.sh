@@ -1,4 +1,4 @@
-
+#!/bin/bash
 action=$1
 
 build_action() {
