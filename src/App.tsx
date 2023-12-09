@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import Component from './navbar.tsx'
+import { Flowbite } from 'flowbite-react'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-        <h1 className="text-3xl font-bold ">
-      Hello world!
-    </h1>
-    </>
+      <Flowbite>
+        <Component />
+      </ Flowbite>
   )
 }
 
