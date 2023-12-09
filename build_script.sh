@@ -60,6 +60,9 @@ elif [ "$action" = "serve" ]; then
     # Run the server
     npm run serve
 
+    # Navigate back to root directory
+    cd ../..
+
 else
     echo "Invalid action"
 fi
