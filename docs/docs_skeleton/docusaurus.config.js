@@ -38,6 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
@@ -67,6 +68,11 @@ const config = {
           //   label: "Tutorial",
           // },
           // { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: `https://www.linkedin.com/in/bal-narendra-s/`,
+            label: "LinkedIn",
+            position: "left",
+          },
           {
             href: `https://github.com/${organizationName}/${projectName}`,
             label: "GitHub",
