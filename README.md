@@ -25,5 +25,5 @@
 
 - run `./build_script.sh build` to build the static content.
 - run `./build_script.sh rebuild` to rebuild the static content.
-- run `./build_script.sh serve` to serve the site on localhost.
+- run `./build_script.sh serve` to serve the static content on localhost.
 - open `localhost:3000/portfolio/` to see the site.
