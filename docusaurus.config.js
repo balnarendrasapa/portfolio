@@ -6,8 +6,8 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-const organizationName = "balnarendrasapa";
-const projectName = "portfolio";
+const organizationName = 'balnarendrasapa';
+const projectName = 'portfolio';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -16,15 +16,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://${organizationName}.github.io',
+  url: `https://${organizationName}.github.io`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl:`/${projectName}/`,
+  baseUrl: `/${projectName}/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
