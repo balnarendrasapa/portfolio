@@ -1,6 +1,5 @@
 ---
 sidebar_position: 2
-slug: sample
 ---
 
 # Translate your site
