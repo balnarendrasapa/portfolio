@@ -1,6 +1,6 @@
 # Portfolio Site
 
-- This is my portfolio website. 
+- This is my portfolio website. built with docusaurus. follow this [link](https://balnarendrasapa.github.io/portfolio/) to view the site.
 
 ## Getting Started
 
