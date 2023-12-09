@@ -51,11 +51,18 @@ if ($action -eq "build") {
     Set-Location -Path ..\..
 
 } elseif ($action -eq "serve") {
-    # Navigate to docs_skeleton directory
-    Set-Location -Path .\docs_build\docs_skeleton
+    try {
+        # Navigate to docs_skeleton directory
+        Set-Location -Path .\docs_build\docs_skeleton
 
-    # Run the server
-    npm run serve
+        # Run the server
+        npm run serve
+    }
+
+    finally {
+        # Navigate back to root directory
+        Set-Location -Path ..\..
+    }
 
 } else {
     Write-Output "Invalid action"
