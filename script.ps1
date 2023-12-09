@@ -26,9 +26,6 @@ function Run-Action {
     # Copy markdown and notebook files to docs_skeleton
     Copy-Item -Path ..\files\* -Destination .\docs -Recurse
 
-    # Run nbdoc
-    nbdoc_build
-
     try{
         # run npm run serve
         npm run start

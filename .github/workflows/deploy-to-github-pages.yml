@@ -42,15 +42,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: "3.8"
-          architecture: "x64"
-
-      - name: Install dependencies pip
-        run: pip install nbdoc==0.0.54 nbdev==1.2.0
         
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive
@@ -61,10 +52,6 @@ jobs:
 
       - name: Copy markdown and notebook files to docs_skeleton
         run: cp -r ./docs/files/** ./docs/docs_skeleton/docs/
-
-      - name: Run nbdoc
-        run: nbdoc_build
-        working-directory: ./docs/docs_skeleton
 
       - name: Build
         run: yarn build

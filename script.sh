@@ -28,9 +28,6 @@ elif [ "$action" = "run" ]; then
     # Copy markdown and notebook files to docs_skeleton
     cp -r ../files/** ./docs/
 
-    # Run nbdoc
-    nbdoc_build
-
     # run npm run serve
     npm run start
 
