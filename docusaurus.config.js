@@ -11,7 +11,7 @@ const projectName = 'portfolio';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Portfolio',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -62,10 +62,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Bal Narendra Sapa | Portfolio',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/Icon.svg',
         },
         items: [
           // {
@@ -81,8 +81,23 @@ const config = {
             position: "left",
           },
           {
-            href: `https://github.com/${organizationName}/${projectName}`,
+            href: `https://www.kaggle.com/balnarendrasapa`,
+            label: "Kaggle",
+            position: "left",
+          },
+          {
+            href: `https://github.com/${organizationName}`,
             label: "GitHub",
+            position: "left",
+          },
+          {
+            href: `https://huggingface.co/bnsapa`,
+            label: "HuggingFace",
+            position: "left",
+          },
+          {
+            href: `https://github.com/${organizationName}/${projectName}`,
+            label: "Go to Site's Repo",
             position: "right",
           },
         ],
