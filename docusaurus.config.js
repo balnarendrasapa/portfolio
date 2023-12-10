@@ -11,7 +11,7 @@ const projectName = 'portfolio';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Portfolio',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -59,78 +59,83 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Bal Narendra Sapa | Portfolio',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Header Icon',
+          src: 'Header-Footer Files/Icon.svg',
         },
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: `https://www.linkedin.com/in/bal-narendra-s/`,
             label: "LinkedIn",
             position: "left",
           },
           {
-            href: `https://github.com/${organizationName}/${projectName}`,
+            href: `https://www.kaggle.com/balnarendrasapa`,
+            label: "Kaggle",
+            position: "left",
+          },
+          {
+            href: `https://github.com/${organizationName}`,
             label: "GitHub",
+            position: "left",
+          },
+          {
+            href: `https://huggingface.co/bnsapa`,
+            label: "HuggingFace",
+            position: "left",
+          },
+          {
+            href: `https://github.com/${organizationName}/${projectName}`,
+            label: "Go to Site's Repo",
             position: "right",
           },
         ],
       },
       footer: {
         style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Bal Narendra Sapa's Portfolio`,
+        logo: {
+          alt: 'Footer Icon',
+          src: 'Header-Footer Files/Icon.svg',
+          href: 'https://balnarendrasapa.github.io/portfolio/',
+          width: 160,
+          height: 51,
+        },
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/intro',
-          //     },
-          //   ],
-          // },
           {
-            title: 'Community',
+            title: 'Social',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: `https://www.linkedin.com/in/bal-narendra-s/`,
+                label: "LinkedIn",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: `https://www.kaggle.com/balnarendrasapa`,
+                label: "Kaggle",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: `https://huggingface.co/bnsapa`,
+                label: "HuggingFace",
               },
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
-                label: 'GitHub',
+                href: `https://github.com/${organizationName}`,
+                label: "GitHub",
+              },
+              {
+                label: "Go to Site's Repo",
                 href: `https://github.com/${organizationName}/${projectName}`,
               },
             ],
           },
         ],
-        // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
