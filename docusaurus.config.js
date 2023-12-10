@@ -60,6 +60,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        // respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'Bal Narendra Sapa | Portfolio',
         logo: {
