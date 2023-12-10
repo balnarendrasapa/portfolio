@@ -63,8 +63,8 @@ const config = {
       navbar: {
         title: 'Bal Narendra Sapa | Portfolio',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/Icon.svg',
+          alt: 'Header Icon',
+          src: 'Header-Footer Files/Icon.svg',
         },
         items: [
           {
@@ -98,8 +98,8 @@ const config = {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} Bal Narendra Sapa's Portfolio`,
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/Icon.svg',
+          alt: 'Footer Icon',
+          src: 'Header-Footer Files/Icon.svg',
           href: 'https://balnarendrasapa.github.io/portfolio/',
           width: 160,
           height: 51,
