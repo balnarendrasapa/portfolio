@@ -29,7 +29,6 @@ function OutlinedCard({ title, content, link }) {
                     backgroundColor: '#6c6f72',
                     color: '#fff',
                 }
-            
             }}>Click here to go there</Button>
         </CardActions>
     </Card>
@@ -37,19 +36,27 @@ function OutlinedCard({ title, content, link }) {
 }
 
 export default function CardGrid() {
+    const contentProject = "Explore the projects I have done until now and discover the range of my skills."
+    const contentResume = "Dive into the details of my professional experience and education."
+    const contentAbout = "A brief introduction. Learn more about me and my interests."
+    const contentSkills = "A list of my skills and the technologies I have worked with."
+    const contentContact = "Get in touch with me. I am always open to new opportunities."
     return (
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"About"} content={"abc"} link={"portfolio/about"}/>
+          <OutlinedCard title={"About"} content={contentAbout} link={"portfolio/about"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Resume/CV"} content={"abc"} link={"portfolio/resume"}/>
+          <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/resume"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Projects"} content={"abc"} link={"portfolio/category/projects"}/>
+          <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/category/projects"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Skills"} content={"abc"} link={"portfolio/skills"}/>
+          <OutlinedCard title={"Skills"} content={contentSkills} link={"portfolio/skills"}/>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <OutlinedCard title={"Contact"} content={contentContact} link={"portfolio/contact"}/>
         </Grid>
       </Grid>
     );
