@@ -38,7 +38,7 @@ function OutlinedCard({ title, content, link }) {
 export default function CardGrid() {
     const contentProject = "Explore the projects I have done until now and discover the range of my skills."
     const contentResume = "Dive into the details of my professional experience and education."
-    const contentAbout = "A brief introduction. Learn more about me and my interests."
+    const contentAbout = "A brief introduction about me and my interests and hobbies."
     const contentSkills = "A list of my skills and the technologies I have worked with."
     const contentContact = "Get in touch with me. I am always open to new opportunities."
     return (
