@@ -11,15 +11,26 @@ function OutlinedCard({ title, content, link }) {
     <Card variant="outlined" sx={{ 
         backgroundColor: '#242526', 
         color: '#fff',
-        outline: '1px solid #f60002', 
-    
+        outline: '2px dotted #5C8374', 
+        '&:hover': {
+            backgroundColor: '#1b1b1d',
+            color: '#fff',
+        }
     }}>
       <CardContent>
         <h3>{title}</h3>
         <p>{content}</p>
       </CardContent>
         <CardActions>
-            <Button size="small" component={Link} to={`/${link}`}>Learn More</Button>
+            <Button size="small" component={Link} to={`/${link}`} sx={{
+                color: '#fff',
+                outline: '1px dashed #5C8374',
+                '&:hover': {
+                    backgroundColor: '#6c6f72',
+                    color: '#fff',
+                }
+            
+            }}>Click here to go there</Button>
         </CardActions>
     </Card>
   );
@@ -35,10 +46,10 @@ export default function CardGrid() {
           <OutlinedCard title={"Resume/CV"} content={"abc"} link={"portfolio/resume"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Projects"} content={"abc"} link={"portfolio/about"}/>
+          <OutlinedCard title={"Projects"} content={"abc"} link={"portfolio/category/projects"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Skills"} content={"abc"} link={"portfolio/resume"}/>
+          <OutlinedCard title={"Skills"} content={"abc"} link={"portfolio/skills"}/>
         </Grid>
       </Grid>
     );
