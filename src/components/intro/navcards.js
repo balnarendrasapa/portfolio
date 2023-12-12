@@ -9,11 +9,11 @@ import Grid from '@mui/material/Grid';
 function OutlinedCard({ title, content, link }) {
   return (
     <Card variant="outlined" sx={{ 
-        backgroundColor: '#242526', 
+        backgroundColor: '#161b22', 
         color: '#fff',
         outline: '0.5px dashed #5C8374', 
         '&:hover': {
-            backgroundColor: '#1b1b1d',
+            backgroundColor: '#30363d',
             color: '#fff',
         },
         borderRadius: '15px',

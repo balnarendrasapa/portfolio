@@ -42,6 +42,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
@@ -62,7 +65,7 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: true,
         // respectPrefersColorScheme: true,
       },
       navbar: {
