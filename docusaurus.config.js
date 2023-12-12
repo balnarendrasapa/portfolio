@@ -101,7 +101,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Bal Narendra Sapa's Portfolio`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bal Narendra Sapa`,
         logo: {
           alt: 'Footer Icon',
           src: 'Header-Footer Files/Icon.svg',
