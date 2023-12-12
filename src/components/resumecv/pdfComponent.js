@@ -6,7 +6,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 import './Sample.css';
 
-import PDF from '/Resume.pdf';
+import PDF from '@site/static/Resume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
