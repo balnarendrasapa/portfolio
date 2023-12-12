@@ -1,17 +1,70 @@
-import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import { useCallback, useState } from 'react';
+import { useResizeObserver } from '@wojtekmaj/react-hooks';
+import { pdfjs, Document, Page } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
 
-import samplePDF from './Resume.pdf';
+import './Sample.css';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import PDF from './Resume.pdf';
 
-export default function pdfComponent() {
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
+
+const options = {
+  cMapUrl: '/cmaps/',
+  standardFontDataUrl: '/standard_fonts/',
+};
+
+const resizeObserverOptions = {};
+
+const maxWidth = 800;
+
+export default function PdfApp() {
+  const [file, setFile] = useState(PDF);
+  const [numPages, setNumPages] = useState();
+  const [containerRef, setContainerRef] = useState(null);
+  const [containerWidth, setContainerWidth] = useState();
+
+  const onResize = useCallback((entries) => {
+    const [entry] = entries;
+
+    if (entry) {
+      setContainerWidth(entry.contentRect.width);
+    }
+  }, []);
+
+  useResizeObserver(containerRef, resizeObserverOptions, onResize);
+
+  function onFileChange(event){
+    const { files } = event.target;
+
+    if (files && files[0]) {
+      setFile(files[0] || null);
+    }
+  }
+
+  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
+    setNumPages(nextNumPages);
+  }
 
   return (
-    <ReactPDF
-      file={{
-        url: 'Resume.pdf'
-      }}
-    />
+    <div className="Example">
+      <div className="Example__container">
+        <div className="Example__container__document" ref={setContainerRef}>
+          <Document file={file} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+                width={containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth}
+              />
+            ))}
+          </Document>
+        </div>
+      </div>
+    </div>
   );
 }
