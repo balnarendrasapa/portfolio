@@ -11,7 +11,7 @@ function OutlinedCard({ title, content, link }) {
     <Card variant="outlined" sx={{ 
         backgroundColor: '#242526', 
         color: '#fff',
-        outline: '2px dotted #5C8374', 
+        outline: '0.5px solid #5C8374', 
         '&:hover': {
             backgroundColor: '#1b1b1d',
             color: '#fff',
@@ -24,7 +24,7 @@ function OutlinedCard({ title, content, link }) {
         <CardActions>
             <Button size="small" component={Link} to={`/${link}`} sx={{
                 color: '#fff',
-                outline: '1px dashed #5C8374',
+                outline: '1px solid #5C8374',
                 '&:hover': {
                     backgroundColor: '#6c6f72',
                     color: '#fff',
