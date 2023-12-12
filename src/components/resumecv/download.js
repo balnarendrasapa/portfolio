@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import PDF from './Resume.pdf';
+import PDF from '/Resume.pdf';
 
 const DownloadButton = () => {
 
