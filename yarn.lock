@@ -2806,6 +2806,11 @@
     "@webassemblyjs/ast" "1.11.6"
     "@xtuc/long" "4.2.2"
 
+"@wojtekmaj/react-hooks@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.npmjs.org/@wojtekmaj/react-hooks/-/react-hooks-1.18.1.tgz"
+  integrity sha512-hvaKC4+xBt+jrccMZsV3oHveaAjcO/Lw833vH78Y/auIwya14H4WH9E1i7EEnm/RcGJmUzCYNA9Ulx9aY1TMhQ==
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@xtuc/ieee754/-/ieee754-1.2.0.tgz"
