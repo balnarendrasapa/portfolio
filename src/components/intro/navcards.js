@@ -11,11 +11,12 @@ function OutlinedCard({ title, content, link }) {
     <Card variant="outlined" sx={{ 
         backgroundColor: '#242526', 
         color: '#fff',
-        outline: '0.5px solid #5C8374', 
+        outline: '0.5px dashed #5C8374', 
         '&:hover': {
             backgroundColor: '#1b1b1d',
             color: '#fff',
-        }
+        },
+        borderRadius: '15px',
     }}>
       <CardContent>
         <h3>{title}</h3>
@@ -24,11 +25,12 @@ function OutlinedCard({ title, content, link }) {
         <CardActions>
             <Button size="small" component={Link} to={`/${link}`} sx={{
                 color: '#fff',
-                outline: '1px solid #5C8374',
+                outline: '0.5px solid #5C8374',
                 '&:hover': {
                     backgroundColor: '#6c6f72',
                     color: '#fff',
-                }
+                },
+                borderRadius: '10px',
             }}>Click here to go there</Button>
         </CardActions>
     </Card>
