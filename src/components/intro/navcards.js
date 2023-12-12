@@ -50,10 +50,10 @@ export default function CardGrid() {
           <OutlinedCard title={"About"} content={contentAbout} link={"portfolio/about"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/category/resume--cv"}/>
+          <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/resume"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/category/projects"}/>
+          <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/projects"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
           <OutlinedCard title={"Skills"} content={contentSkills} link={"portfolio/skills"}/>
