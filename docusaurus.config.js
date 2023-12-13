@@ -69,7 +69,7 @@ const config = {
         // respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Bal Narendra Sapa | Portfolio',
+        title: 'Bal Narendra Sapa',
         logo: {
           alt: 'Header Icon',
           src: 'Header-Footer Files/Icon.svg',
