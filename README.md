@@ -10,6 +10,7 @@ This project was built using these technologies.
 
 - [Docusaurus](https://docusaurus.io/).
 - React.js
+- Markdown
 - CSS3
 - VsCode
 
