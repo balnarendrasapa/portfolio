@@ -19,14 +19,43 @@ title: Projects
 
 ### Road Detection
 
+🚗🛣️ **Drivable Area & Lane Segmentation**
+
+This project focuses on fine-tuning a model using a dataset generated through stable diffusion for Drivable Area and Lane segmentation. The dataset includes images and annotations for both tasks, utilizing labelme for annotation. The dataset is partitioned into Train, Test, and Validation sets, with annotations for Drivable Area and Lane Detection. The model is trained with transformations like random perspective and HSV color augmentation. Deployed on Hugging Face Spaces, it's accessible through Docker or a Python virtual environment. References include the TwinLiteNet model for segmentation. Explore the dataset on [Hugging Face](https://huggingface.co/datasets/bnsapa/road-detection) and deploy the model locally. 🌐👨‍💻 #Segmentation #LaneDetection
+
 ### FAQ LLM
+
+🤖 **E-Commerce FAQ Chatbot with PEFT & LoRA**
+
+Developed by Bal Narendra Sapa and Ajay Kumar Jagu from the University of New Haven, this project introduces an E-Commerce FAQ Chatbot using Parameter Efficient Fine Tuning (PEFT) with the Falcon-7B model. We fine-tuned the base model with custom e-commerce FAQ dataset. Leveraging the LoRA Technique for Low-Rank Adaptation, the chatbot streamlines customer support, reduces operational costs, and optimizes resource allocation. The dataset, sourced from Kaggle, comprises 79 samples. The fine-tuned model demonstrates decreasing loss values and achieves promising Bleu scores. The deployment includes a Streamlit application, and the code and fine-tuned model are available on Hugging Face. Check out the [Kaggle Notebook](https://www.kaggle.com/code/balnarendrasapa/fine-tuning-falcon-7b-with-faq-e-com-dataset) for a walkthrough. 🚀🛍️ #Chatbot #PEFT #LoRA #ECommerceFAQ.
 
 ### Mask Detection
 
+🎭 **Mask Detection with Transfer Learning**
+
+Utilizing PyTorch in a Jupyter notebook, this project focuses on mask detection using transfer learning with a pretrained VGG19 model. The dataset, sourced from Kaggle, comprises around 12k images. Leveraging Google Colab's T4 GPU, the model is trained with additional layers on top of the VGG19 base. The project is accessible for running through the provided [Colab link](https://colab.research.google.com/github/balnarendrasapa/mask-detection/blob/master/face_mask_detection.ipynb). The result showcases successful mask detection, contributing to public health and safety. 🚀👥 #MaskDetection #TransferLearning #PyTorch 
+
 ### Cybersecurity NER
+
+🌐🛡️ **Cybersecurity Named Entity Recognition**
+
+This NLP project focuses on Named Entity Recognition (NER) tailored for the cybersecurity domain. Utilizing the `distilbert-base-uncased` pretrained model, the system is fine-tuned using the MITRE dataset. A Google Colab notebook provides accessibility for exploration and use. The MITRE dataset is available in the repository and on Hugging Face. Metrics showcase the model's efficacy, and the fine-tuned model is hosted on Hugging Face for easy integration. An example demonstrates the model's ability to recognize "abcde" as a computer malware. Enhancing cybersecurity text analysis, this project contributes to threat detection and prevention. 🚀👾 #NER #Cybersecurity #NLP #HuggingFace
 
 ### Doc-Chatbot
 
+🤖📚 **ChatBot with Document Integration**
+
+This project is about chatbot that can answer user queries based on the pdf provided by the user.This ChatBot, makes use of Falcon 7B LLM and OpenAI's GPT model, utilizes Retrieval Augmented Generation for document-based responses. With embeddings generated from the all-minilm-l6-v2 model, the system excels in answering questions based on provided PDF documents. An Interactive app is developed using Streamlit. This interactive app allows users to upload PDFs and inquire about their content, providing an efficient solution for document-based queries. Enhancing accessibility, this ChatBot serves as a versatile tool for information retrieval. 📄 #ChatBot #DocumentIntegration #RetrievalAugmentation #InformationRetrieval
+
+
 ### Education Impact Analysis
 
+📚📈 **Education Impact Analysis**
+
+This project investigates the correlation between education levels and performance scores. Employing Analysis of Variance (ANOVA), the study compares means across five education groups. Results reveal a significant difference, rejecting the null hypothesis. Two pairs, "Less than High School" - "Graduate" and "Less than High School" - "Bachelor's," exhibit distinct means. The study concludes that individuals with Graduate or Bachelor's education have varying scores compared to those without High School completion. Detailed analysis and results are accessible on the project's [website](https://balnarendrasapa.github.io/education_impact_analysis/docs/intro). 📊🎓 #EducationAnalysis #PerformanceMetrics #ANOVA #StatisticalAnalysis
+
 ### Spam Classification
+
+📧🚫 **Spam Detection with Logistic Regression**
+
+This project tackles the pervasive issue of email spam through Logistic Regression. Leveraging 21 email attributes, including sender and recipient information, a Generalized Linear Model is crafted using Python's `statsmodels`. The model, trained on an 80/20 split dataset, achieves an accuracy between 90% and 95%, with metrics like precision and sensitivity reinforcing its effectiveness. Operating with a 0.50 threshold, the model reliably classifies emails. The project's comprehensive results and methodologies are accessible on the dedicated [website](https://balnarendrasapa.github.io/spam_classification/docs/intro). Enhancing email security, this logistic regression approach offers a robust solution against unwanted messages. 🌐🔒 #SpamDetection #LogisticRegression #EmailSecurity
