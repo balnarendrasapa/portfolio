@@ -10,12 +10,13 @@ This project was built using these technologies.
 
 - [Docusaurus](https://docusaurus.io/).
 - React.js
+- Markdown
 - CSS3
 - VsCode
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [balnarendrasapa](https://github.com/balnarendrasapa/portfolio). Thanks!
+You can fork this repo to modify and make changes of your own and make sure to follow the rules of license. Please give me proper credit by linking back to [balnarendrasapa](https://github.com/balnarendrasapa/portfolio). Thanks!
 
 ## Getting started
 

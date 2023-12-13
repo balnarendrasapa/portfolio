@@ -9,11 +9,11 @@ import Grid from '@mui/material/Grid';
 function OutlinedCard({ title, content, link }) {
   return (
     <Card variant="outlined" sx={{ 
-        backgroundColor: '#242526', 
+        backgroundColor: '#161b22', 
         color: '#fff',
-        outline: '0.5px dashed #5C8374', 
+        outline: '2px solid #22262e', 
         '&:hover': {
-            backgroundColor: '#1b1b1d',
+            backgroundColor: '#30303d',
             color: '#fff',
         },
         borderRadius: '15px',
@@ -25,9 +25,9 @@ function OutlinedCard({ title, content, link }) {
         <CardActions>
             <Button size="small" component={Link} to={`/${link}`} sx={{
                 color: '#fff',
-                outline: '0.5px solid #5C8374',
+                outline: '0.5px solid #5c0055',
                 '&:hover': {
-                    backgroundColor: '#6c6f72',
+                    backgroundColor: '#8c6672',
                     color: '#fff',
                 },
                 borderRadius: '10px',
@@ -50,10 +50,10 @@ export default function CardGrid() {
           <OutlinedCard title={"About"} content={contentAbout} link={"portfolio/about"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/category/resume--cv"}/>
+          <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/resume"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/category/projects"}/>
+          <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/projects"}/>
         </Grid>
         <Grid item xs={12} sm={6}>
           <OutlinedCard title={"Skills"} content={contentSkills} link={"portfolio/skills"}/>

@@ -12,8 +12,8 @@ const projectName = 'portfolio';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Portfolio',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'My Personal Portfolio',
+  favicon: 'Header-Footer Files/Icon.svg',
 
   // Set the production url of your site here
   url: `https://${organizationName}.github.io`,
@@ -42,13 +42,14 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
         },
-        blog: {
-          showReadingTime: true,
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -59,14 +60,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'Header-Footer Files/Icon.svg',
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: true,
         // respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Bal Narendra Sapa | Portfolio',
+        title: 'Bal Narendra Sapa',
         logo: {
           alt: 'Header Icon',
           src: 'Header-Footer Files/Icon.svg',
