@@ -12,8 +12,8 @@ const projectName = 'portfolio';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Portfolio',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'My Personal Portfolio',
+  favicon: 'Header-Footer Files/Icon.svg',
 
   // Set the production url of your site here
   url: `https://${organizationName}.github.io`,
