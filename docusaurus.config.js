@@ -80,24 +80,32 @@ const config = {
         },
         items: [
           {
-            href: `https://www.linkedin.com/in/bal-narendra-s/`,
-            label: "LinkedIn",
-            position: "left",
+              to: '/',
+              label: 'Home',
           },
           {
-            href: `https://www.kaggle.com/balnarendrasapa`,
-            label: "Kaggle",
-            position: "left",
+              to: '/about',
+              label: 'About',
           },
           {
-            href: `https://github.com/${organizationName}`,
-            label: "GitHub",
-            position: "left",
+            to: '/projects',
+            label: 'Projects',
           },
           {
-            href: `https://huggingface.co/bnsapa`,
-            label: "HuggingFace",
-            position: "left",
+            to: '/skills',
+            label: 'Skills',
+          },
+          {
+            to: '/resume',
+            label: 'Resume',
+          },
+          {
+            to: '/contact',
+            label: 'Contact',
+          },
+          {
+            to: '/git',
+            label: 'Git Contributions',
           },
           {
             href: `https://github.com/${organizationName}/${projectName}`,
