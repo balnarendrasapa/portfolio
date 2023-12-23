@@ -48,6 +48,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          breadcrumbs: false
         },
         blog: false,
         theme: {
@@ -61,6 +62,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'Header-Footer Files/Icon.svg',
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
+      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
