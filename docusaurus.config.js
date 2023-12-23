@@ -109,8 +109,8 @@ const config = {
           },
           {
             href: `https://github.com/${organizationName}/${projectName}`,
-            label: "Go to Site's Repo",
             position: "right",
+            className: "header-github-link",
           },
         ],
       },
