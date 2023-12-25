@@ -17,7 +17,7 @@ function OutlinedCard({ title, content, link }) {
             color: '#fff',
         },
         borderRadius: '15px',
-        width: '100%',
+        width: '50%',
         margin: 'auto',
     }}>
       <CardContent>
