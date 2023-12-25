@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 function OutlinedCard({ title, content, link }) {
   return (
     <Card variant="outlined" sx={{ 
-        backgroundColor: '#161b22', 
+        backgroundColor: '#000', 
         color: '#fff',
         outline: '2px solid #22262e', 
         '&:hover': {
@@ -17,6 +17,8 @@ function OutlinedCard({ title, content, link }) {
             color: '#fff',
         },
         borderRadius: '15px',
+        width: '100%',
+        margin: 'auto',
     }}>
       <CardContent>
         <h3>{title}</h3>
@@ -45,19 +47,19 @@ export default function CardGrid() {
     const contentContact = "Get in touch with me. I am always open to new opportunities."
     return (
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={1} sm={12}>
           <OutlinedCard title={"About"} content={contentAbout} link={"portfolio/about"}/>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12}>
           <OutlinedCard title={"Resume/CV"} content={contentResume} link={"portfolio/resume"}/>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12}>
           <OutlinedCard title={"Projects"} content={contentProject} link={"portfolio/projects"}/>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12}>
           <OutlinedCard title={"Skills"} content={contentSkills} link={"portfolio/skills"}/>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12}>
           <OutlinedCard title={"Contact"} content={contentContact} link={"portfolio/contact"}/>
         </Grid>
       </Grid>
