@@ -21,6 +21,9 @@
   .RightHangerStyle {
       display: none;
   }
+  .RightLineStyle {
+    display: none;
+  }
 }
 
 .RightLineStyle {
@@ -51,12 +54,6 @@
   display: inline-block;
 }
 
-@media (max-width: 800px) {
-.LeftHangerStyle {
-    display: none;
-}
-}
-
 .LeftLineStyle {
   position: fixed;
   top: 50%;
@@ -65,6 +62,15 @@
   width: 3px; /* adjust as needed */
   background: #22262e; /* adjust color as needed */
   z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .LeftHangerStyle {
+      display: none;
+  }
+  .LeftLineStyle {
+    display: none;
+  }
 }
 
 
