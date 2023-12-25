@@ -121,38 +121,6 @@ const config = {
           width: 160,
           height: 51,
         },
-        links: [
-          {
-            title: 'Social',
-            items: [
-              {
-                href: `https://www.linkedin.com/in/bal-narendra-s/`,
-                label: "LinkedIn",
-              },
-              {
-                href: `https://www.kaggle.com/balnarendrasapa`,
-                label: "Kaggle",
-              },
-              {
-                href: `https://huggingface.co/bnsapa`,
-                label: "HuggingFace",
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                href: `https://github.com/${organizationName}`,
-                label: "GitHub",
-              },
-              {
-                label: "Go to Site's Repo",
-                href: `https://github.com/${organizationName}/${projectName}`,
-              },
-            ],
-          },
-        ],
       },
       prism: {
         theme: prismThemes.github,
