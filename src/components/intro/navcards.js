@@ -43,7 +43,6 @@ export default function CardGrid() {
     const contentAbout = "A brief introduction about me and my interests and hobbies."
     const contentSkills = "A list of my skills and the technologies I have worked with."
     const contentContact = "Get in touch with me. I am always open to new opportunities."
-    const contentGitContributions = "Check out my open source contributions on GitHub. and my activity on GitHub."
     return (
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
@@ -60,9 +59,6 @@ export default function CardGrid() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <OutlinedCard title={"Contact"} content={contentContact} link={"portfolio/contact"}/>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <OutlinedCard title={"Git Contributions"} content={contentGitContributions} link={"portfolio/git"}/>
         </Grid>
       </Grid>
     );

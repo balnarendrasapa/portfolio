@@ -104,10 +104,6 @@ const config = {
             label: 'Contact',
           },
           {
-            to: '/git',
-            label: 'Git Contributions',
-          },
-          {
             href: `https://github.com/${organizationName}/${projectName}`,
             position: "right",
             className: "header-github-link",
