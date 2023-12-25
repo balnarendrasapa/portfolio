@@ -78,6 +78,7 @@ const config = {
           alt: 'Header Icon',
           src: 'Header-Footer Files/Icon.svg',
         },
+        hideOnScroll: true,
         items: [
           {
               to: '/',
