@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hangers.css'
-import Linkedin from '@site/static/social-media/linkedin.svg'
+import Linkedin from '@site/static/social-media/linkedin1.svg'
 
 const Hangers = () => {
   return (
