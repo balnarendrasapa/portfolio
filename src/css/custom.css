@@ -38,15 +38,20 @@
 
 /* Style the links in the header */
 .navbar__item {
-  color: #F08A5D; /* Change the text color */
+  color: #F8F3D4; /* Change the text color */
+}
+
+.navbar__item:hover,
+.navbar__item:focus {
+  color: #f84008; /* Color on hover/focus (choose your own) */
 }
 
 
 /* Footer link color */
 .footer {
     background-color: #0d1117; /* Change the background color */
-  --ifm-footer-link-color: #F08A5D;          /* Normal link */
+  --ifm-footer-link-color: #F8F3D4;          /* Normal link */
   --ifm-footer-link-hover-color: #f84008;    /* On hover */
-  --ifm-footer-color: #F08A5D;               /* General footer text */
+  --ifm-footer-color: #F8F3D4;               /* General footer text */
     border-top: 2px solid #22262e;
 }
