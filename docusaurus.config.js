@@ -94,6 +94,11 @@ const config = {
             position: "left",
           },
           {
+            href: `https://leetcode.com/u/balnarendrasapa/`,
+            label: "Leetcode",
+            position: "left",
+          },
+          {
             href: `https://github.com/${organizationName}/${projectName}`,
             label: "Go to Site's Repo",
             position: "right",
@@ -131,6 +136,10 @@ const config = {
           {
             title: 'More',
             items: [
+              {
+                href: `https://leetcode.com/u/balnarendrasapa/`,
+                label: "Leetcode",
+              },
               {
                 href: `https://github.com/${organizationName}`,
                 label: "GitHub",
