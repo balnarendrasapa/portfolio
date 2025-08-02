@@ -74,7 +74,7 @@ const config = {
         // },
         items: [
           {
-            href: `https://www.linkedin.com/in/bal-narendra-s/`,
+            href: `https://www.linkedin.com/in/bal-narendra-sapa/`,
             label: "LinkedIn",
             position: "left",
           },
@@ -120,7 +120,7 @@ const config = {
             title: 'Social',
             items: [
               {
-                href: `https://www.linkedin.com/in/bal-narendra-s/`,
+                href: `https://www.linkedin.com/in/bal-narendra-sapa/`,
                 label: "LinkedIn",
               },
               {
