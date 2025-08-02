@@ -68,10 +68,10 @@ const config = {
       },
       navbar: {
         title: 'Bal Narendra Sapa',
-        logo: {
-          alt: 'Header Icon',
-          src: 'Header-Footer Files/Icon.svg',
-        },
+        // logo: {
+        //   alt: 'Header Icon',
+        //   src: 'Header-Footer Files/Icon.svg',
+        // },
         items: [
           {
             href: `https://www.linkedin.com/in/bal-narendra-s/`,

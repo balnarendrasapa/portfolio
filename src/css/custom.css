@@ -43,7 +43,10 @@
 
 .navbar__item:hover,
 .navbar__item:focus {
-  color: #f84008; /* Color on hover/focus (choose your own) */
+  background: rgba(136, 131, 95, 0.17);  /* Soft background on hover */
+  color: #F8F3D4;                         /* Toasty orange color */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+  border-radius: 10px; 
 }
 
 
@@ -55,3 +58,20 @@
   --ifm-footer-color: #F8F3D4;               /* General footer text */
     border-top: 2px solid #22262e;
 }
+
+
+.navbar__title {
+  color: #F8F3D4;
+  font-size: 15px;
+  /* font-family: 'Comic Sans', sans-serif; */
+  
+  background: #0e480a;        /* Box background color */
+  padding: 2px 7px;          /* Top/bottom and left/right padding */
+  border-radius: 10px;         /* Rounded corners */
+  border: 2px solid #e1f05d;  /* Optional: border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Optional: subtle shadow */
+  display: inline-block;      /* Ensures the box fits content */
+  /* letter-spacing: 2px; */
+  /* text-transform: uppercase; */
+}
+
