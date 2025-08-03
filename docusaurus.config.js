@@ -74,7 +74,7 @@ const config = {
         },
         items: [
           {
-            href: `https://www.linkedin.com/in/bal-narendra-s/`,
+            href: `https://www.linkedin.com/in/balnarendrasapa/`,
             label: "LinkedIn",
             position: "left",
           },
@@ -99,6 +99,11 @@ const config = {
             position: "left",
           },
           {
+            href: `https://codeforces.com/profile/balnarendrasapa`,
+            label: "Codeforces",
+            position: "left",
+          },
+          {
             href: `https://github.com/${organizationName}/${projectName}`,
             label: "Go to Site's Repo",
             position: "right",
@@ -120,7 +125,7 @@ const config = {
             title: 'Social',
             items: [
               {
-                href: `https://www.linkedin.com/in/bal-narendra-s/`,
+                href: `https://www.linkedin.com/in/balnarendrasapa/`,
                 label: "LinkedIn",
               },
               {
@@ -130,6 +135,10 @@ const config = {
               {
                 href: `https://huggingface.co/bnsapa`,
                 label: "HuggingFace",
+              },
+              {
+                href: `https://codeforces.com/profile/balnarendrasapa`,
+                label: "Codeforces",
               },
             ],
           },
