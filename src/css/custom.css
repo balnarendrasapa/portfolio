@@ -19,7 +19,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  background-color: #0d1117;
+  background-color: #0c0f14;
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -32,8 +32,8 @@
 
 /* Style the header */
 .navbar {
-  background-color: #0d1117; /* Change the background color */
-  border-bottom: 2px solid #22262e; /* Add a bottom border */
+  background-color: #050608; /* Change the background color */
+  border-bottom: 1px solid #22262e; /* Add a bottom border */
 }
 
 /* Style the links in the header */
@@ -43,9 +43,9 @@
 
 /* Style the footer */
 .footer {
-  background-color: #0d1117; /* Change the background color */
+  background-color: #050608; /* Change the background color */
   color: #fff; /* Change the text color */
-  border-top: 2px solid #22262e;
+  border-top: 1px solid #22262e;
 }
 
 /* Style the links in the footer */
