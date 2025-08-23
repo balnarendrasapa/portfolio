@@ -30,7 +30,7 @@ slug: /
 }}>
   ## ***<u>About me</u>*** 📝
 
-I am ***Bal Narendra Sapa***, an engineer who likes to solve problems related to AI and Technology. I have always been good at mathematics since childhood and developed a keen interest in computer science during my schooling years as it involves mathematics heavily. I chose a ***Bachelor’s degree in Computer Science Engineering at Rajiv Gandhi University of Knowledge Technologies (IIIT Basar)***, where I was exposed to programming, technologies, and AI. After my bachelor’s, I pursued ***Master’s degree in Data Science at the University of New Haven, Connecticut***, where I learned extensively about Artificial Intelligence, Machine Learning, and Data Science. I have worked on multiple projects related to AI and contributed to open-source repositories on GitHub (refer to [Projects](#projects-)). I have also gained industry experience by working at companies on AI-related problems across different areas (refer to [Work Experience](#work-experience-)). 
+I am ***Bal Narendra Sapa***, an engineer who likes to solve problems related to AI and Technology. I have always been good at mathematics since childhood and developed a keen interest in computer science during my schooling years as it involves mathematics heavily. I chose a `Bachelor’s degree in Computer Science Engineering at Rajiv Gandhi University of Knowledge Technologies (IIIT Basar)`, where I was exposed to programming, technologies, and AI. After my bachelor’s, I pursued `Master’s degree in Data Science at the University of New Haven, Connecticut`, where I learned extensively about Artificial Intelligence, Machine Learning, and Data Science. I have worked on multiple projects related to AI and contributed to open-source repositories on GitHub (refer to [Projects](#projects-)). I have also gained industry experience by working at companies on AI-related problems across different areas (refer to [Work Experience](#work-experience-)). 
 
 </div>
 
@@ -53,19 +53,34 @@ I am ***Bal Narendra Sapa***, an engineer who likes to solve problems related to
 
 ### Open-Source Contribution to Langchain
 
+links: [Langchain PR](https://github.com/langchain-ai/langchain/pull/7914)
+
+while I was working with Langchain, I faced an issue of not being able to serialize the vectorstores and store it in a variable. I wrote custom code to serialize the vectorstores efficiently to the variables so that these can be stored anywhere we want. `I raised a PR in the official repository and they accepted that PR`.
+
 ### Drivable Area & Lane Segmentation
 
-This project focuses on fine-tuning a model using a dataset generated through stable diffusion for Drivable Area and Lane segmentation. The dataset includes images and annotations for both tasks, utilizing labelme for annotation. The dataset is partitioned into Train, Test, and Validation sets, with annotations for Drivable Area and Lane Detection. The model is trained with transformations like random perspective and HSV color augmentation. Deployed on Hugging Face Spaces, it's accessible through Docker or a Python virtual environment. References include the TwinLiteNet model for segmentation. Explore the dataset on [Hugging Face](https://huggingface.co/datasets/bnsapa/road-detection) and deploy the model locally. 
+links: [Github Repository](https://github.com/balnarendrasapa/road-detection) `(8 stars on Github)`, [Annotated Dataset](https://huggingface.co/datasets/bnsapa/road-detection)`(5 likes on Huggingface)`, [Deployment](https://huggingface.co/spaces/bnsapa/road-detection)
 
+This is about fine-tuning a model that can detect the drivable area and segment the lane in the image. Our team has collected images for training and we annotated those images and trained the model with those images.
 
 ### E-Commerce FAQ Chatbot with PEFT & LoRA
 
-Developed by Bal Narendra Sapa and Ajay Kumar Jagu from the University of New Haven, this project introduces an E-Commerce FAQ Chatbot using Parameter Efficient Fine Tuning (PEFT) with the Falcon-7B model. We fine-tuned the base model with custom e-commerce FAQ dataset. Leveraging the LoRA Technique for Low-Rank Adaptation, the chatbot streamlines customer support, reduces operational costs, and optimizes resource allocation. The dataset, sourced from Kaggle, comprises 79 samples. The deployment includes a Streamlit application, and the code and fine-tuned model are available on Hugging Face. Check out the [Kaggle Notebook](https://www.kaggle.com/code/balnarendrasapa/fine-tuning-falcon-7b-with-faq-e-com-dataset) for a walkthrough.
+links: [Kaggle Notebook](https://www.kaggle.com/code/balnarendrasapa/fine-tuning-falcon-7b-with-faq-e-com-dataset) `(Received 51 upvotes on kaggle)`, [Github Repository](https://github.com/balnarendrasapa/faq-llm) `(Received 3 Stars)`, [Model](https://huggingface.co/bnsapa/faq-llm)
+
+Developed by Bal Narendra Sapa and Ajay Kumar Jagu from the University of New Haven, this project introduces an E-Commerce FAQ Chatbot using Parameter Efficient Fine Tuning (PEFT) with the Falcon-7B model. We fine-tuned the base model with custom e-commerce FAQ dataset. Leveraging the LoRA Technique for Low-Rank Adaptation. The deployment includes a Streamlit application. The code and fine-tuned model are available on Hugging Face.
 
 
 ### Mask Detection with Transfer Learning
 
+links: [Github Repository](https://github.com/balnarendrasapa/mask-detection), [Colab link](https://colab.research.google.com/github/balnarendrasapa/mask-detection/blob/master/face_mask_detection.ipynb)
+
+Utilizing PyTorch in a Jupyter notebook, this project focuses on mask detection using transfer learning with a pretrained VGG19 model. The dataset, sourced from Kaggle, comprises around 12k images. Leveraging Google Colab's T4 GPU, the model is trained with additional layers on top of the VGG19 base. The result showcases successful mask detection.
+
 ### Cybersecurity Named Entity Recognition
+
+links: [Github Repository](https://github.com/balnarendrasapa/cybersecurity-ner) `(Received 4 Github stars)`, [Dataset](https://huggingface.co/datasets/bnsapa/cybersecurity-ner) `(Received 2 likes on huggingface)`
+
+This NLP project focuses on Named Entity Recognition (NER) tailored for the cybersecurity domain. Utilizing the distilbert-base-uncased pretrained model, the system is fine-tuned using the MITRE dataset. Metrics showcase the model's efficacy, and the fine-tuned model is hosted on Hugging Face for easy integration. An example demonstrates the model's ability to recognize "abcde" as a computer malware. Enhancing cybersecurity text analysis, this project contributes to threat detection and prevention.
 
 </div>
 
