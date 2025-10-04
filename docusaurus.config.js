@@ -49,7 +49,10 @@ const config = {
           routeBasePath: '/',
           sidebarPath: false,
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          blogSidebarCount: 10, // or number of posts to show
+        },
         theme: {
           customCss: './src/css/custom.css',
         },

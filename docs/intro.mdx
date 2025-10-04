@@ -5,127 +5,106 @@ hide_title: true
 slug: /
 ---
 
-<div
-  style={{
-    display: "flex",
-    justifyContent: "flex-start",
-    marginBottom: "4rem"
-  }}
->
-  <div
-    style={{
-      display: "inline-block",
-      padding: "0.9rem 0.8rem 0.1rem 1.9rem",
-      marginLeft: "25vw", // Moves to right on desktop
-      maxWidth: "90vw"
-    }}
-  >
-    # Hi, Namaskāram 👋
-  </div>
-</div>
+<center>
+# Hi, Namaskāram 👋
+</center>
 
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
-  ## ***<u>About me</u>*** 📝
+
+## ***<u>About me</u>*** 📝
 
 I am ***Bal Narendra Sapa***, an engineer who likes to solve problems related to AI and Technology. I have always been good at mathematics since childhood and developed a keen interest in computer science during my schooling years as it involves mathematics heavily. I chose a `Bachelor’s degree in Computer Science Engineering at Rajiv Gandhi University of Knowledge Technologies (IIIT Basar)`, where I was exposed to programming, technologies, and AI. After my bachelor’s, I pursued `Master’s degree in Data Science at the University of New Haven, Connecticut`, where I learned extensively about Artificial Intelligence, Machine Learning, and Data Science. I have worked on multiple projects related to AI and contributed to open-source repositories on GitHub (refer to [Projects](#projects-)). I have also gained industry experience by working at companies on AI-related problems across different areas (refer to [Work Experience](#work-experience-)). 
 
-</div>
 
-
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
-  ## ***<u>Work Experience</u>*** 💼
+## ***<u>Work Experience</u>*** 💼
 
 ### AI Engineer
-</div>
+#### vedha.ai - (Jan 2024 - Sept 2025) - Connecticut, USA
 
+1. Added additional features to the chat application, like caching, and sparse searching, Bulk Ingestion.
+2. Worked on creating a AI Chat. Created a strategy for generating scores to match using the vector search techniques using langchain.
+3. Optimized the LLM model for retrieval using retrieval-augmented generation Strategies and utilized the full capacity of llama models to generate responses for an input size of almost 30k tokens with a GPU size of 16 GB.
+4. Improved the response time of the LLM model to generate the responses faster.
+5. Worked on the semantic caching mechanism to cache the responses using Langchain, Redis and Redis Search.
+6. Implemented Bulk Ingestion API routes for the application to process the files in large amounts efficiently using celery with 5 workers.
+7. Added Optical Character Recognition to the application to read the text from the documents.
+8. Implemented sparse searching using the BM25 algorithm in addition to the dense searching.
+9. Used prompt engineering to improve the accuracy of the responses.
+10. Used Docker and Docker-Compose to manage the application, LLM model, celery workers, and Azure Virtual Machines to deploy the application.
+11. Optimized the application using memory management in Python for efficient memory management of GPU on a Virtual Machine.
+12. Worked with Milvus vector stores for efficient vector store management.
 
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
-  ## ***<u>Projects</u>*** 💡
+### AI Engineer Intern 
+#### vedha.ai - (Jun 2023 - Aug 2023) - Connecticut, USA
+1. Worked on creating a Chat Application that uses documents provided by the user to answer the questions using open-source LLM models like Llama (Llama-2-13b-chat, Llama-2-7b-chat), falcon-7b-instruct using Django Python and Huggingface's Text Generation Inference toolkit.
+2. Created a strategy to manage vector stores for each user by utilizing Azure Blob Storage to store the vector stores.
+3. Wrote a REST API for the application for user management, file management and LLM model interactions.
+4. Used Django REST Framework for the backend of the application.
+5. Used Runpod serverless worker for response generation with the help of Huggingface’s TGI toolkit.
+6. Used Docker, Azure DevOps, Git and Agile Framework to manage and maintain the project.
+7. Worked on creating strategies for processing and chunking the documents for better vector search and response generation by the model.
+8. Wrote custom code for managing and integrating Huggingface’s TGI API and Langchain.
 
-### Open-Source Contribution to Langchain
+## ***<u>Certifications</u>*** 📜
+
+1. Azure AI Engineer Associate - AI 102 - [Credential Link](https://learn.microsoft.com/en-us/users/balnarendrasapa-2320/credentials/92fc9ad499238059?ref=https%3A%2F%2Fwww.linkedin.com%2F)
+2. Azure AI Fundamentals - AI 900 - [Credential Link](https://learn.microsoft.com/en-us/users/balnarendrasapa-2320/credentials/5db34e4b52592537)
+
+## ***<u>Projects</u>*** 💡
+
+#### 1. Open-Source Contribution to Langchain
 
 > links: [Langchain PR](https://github.com/langchain-ai/langchain/pull/7914)
 
 while I was working with Langchain, I faced an issue of not being able to serialize the vectorstores and store it in a variable. I wrote custom code to serialize the vectorstores efficiently to the variables so that these can be stored anywhere we want. <code>I raised a PR in the official repository and they accepted that PR</code>.
 
-![langchain](/langchain.png)
-
-### Drivable Area & Lane Segmentation
+#### 2. Drivable Area & Lane Segmentation
 
 > links: [Github Repository](https://github.com/balnarendrasapa/road-detection) `(8 stars on Github)`, [Annotated Dataset](https://huggingface.co/datasets/bnsapa/road-detection)`(5 likes on Huggingface)`, [Deployment](https://huggingface.co/spaces/bnsapa/road-detection)
 
 This is about fine-tuning a model that can detect the drivable area and segment the lane in the image. Our team has collected images for training and we annotated those images and trained the model with those images.
 
-![dals](/dals.jpg)
 
-
-### E-Commerce FAQ Chatbot with PEFT & LoRA
+#### 3. E-Commerce FAQ Chatbot with PEFT & LoRA
 
 > links: [Kaggle Notebook](https://www.kaggle.com/code/balnarendrasapa/fine-tuning-falcon-7b-with-faq-e-com-dataset) `(Received 51 upvotes on kaggle)`, [Github Repository](https://github.com/balnarendrasapa/faq-llm) `(Received 3 Stars)`, [Model](https://huggingface.co/bnsapa/faq-llm)
 
 Developed by Bal Narendra Sapa and Ajay Kumar Jagu from the University of New Haven, this project introduces an E-Commerce FAQ Chatbot using Parameter Efficient Fine Tuning (PEFT) with the Falcon-7B model. We fine-tuned the base model with custom e-commerce FAQ dataset. Leveraging the LoRA Technique for Low-Rank Adaptation. The deployment includes a Streamlit application. The code and fine-tuned model are available on Hugging Face.
 
 
-### Mask Detection with Transfer Learning
+#### 4. Mask Detection with Transfer Learning
 
 > links: [Github Repository](https://github.com/balnarendrasapa/mask-detection), [Colab link](https://colab.research.google.com/github/balnarendrasapa/mask-detection/blob/master/face_mask_detection.ipynb), [Deployment](https://huggingface.co/spaces/bnsapa/mask-detection)
 
-Utilizing PyTorch in a Jupyter notebook, this project focuses on mask detection using transfer learning with a pretrained VGG19 model. The dataset, sourced from Kaggle, comprises around 12k images. Leveraging Google Colab's T4 GPU, the model is trained with additional layers on top of the VGG19 base. The result showcases successful mask detection.
+Utilizing PyTorch in a Jupyter notebook, this project focuses on mask detection `(Detecting whether a person is wearing mask or not)` using transfer learning with a pretrained VGG19 model. The dataset, sourced from Kaggle, comprises around 12k images. Leveraging Google Colab's T4 GPU, the model is trained with additional layers on top of the VGG19 base. The result showcases successful mask detection.
 
-![md](/mask-detection.png)
-
-### Cybersecurity Named Entity Recognition
+#### 5. Cybersecurity Named Entity Recognition
 
 > links: [Github Repository](https://github.com/balnarendrasapa/cybersecurity-ner) `(Received 4 Github stars)`, [Dataset](https://huggingface.co/datasets/bnsapa/cybersecurity-ner) `(Received 2 likes on huggingface)`, [Deployment](https://huggingface.co/spaces/bnsapa/cybersecurity-ner)
 
-This NLP project focuses on Named Entity Recognition (NER) tailored for the cybersecurity domain. Utilizing the distilbert-base-uncased pretrained model, the system is fine-tuned using the MITRE dataset. Metrics showcase the model's efficacy, and the fine-tuned model is hosted on Hugging Face for easy integration. The given below example shows how the model performs NER. The model identifies token that are malware based on the context.
+This NLP project focuses on `Named Entity Recognition (NER)` tailored for the cybersecurity domain. Utilizing the distilbert-base-uncased pretrained model, the system is fine-tuned using the MITRE dataset. Metrics showcase the model's efficacy, and the fine-tuned model is hosted on Hugging Face for easy integration. The given below example shows how the model performs NER. The model identifies `tokens that are malware based on the context.`
 
-![cner](/cner.png)
 
-</div>
-
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
 ## ***<u>Education</u> 🎓***
 
 ### 1. University of New Haven
+- Master of Science in Data Science - (Aug 2022 - Dec 2023) - Connecticut, USA - Grade: 3.81 / 4
 
 ### 2. Rajiv Gandhi University of Knowledge Technologies - (IIIT Basar)
-</div>
+- Bachelor’s Degree in Computer Science - (2018 - 2022) - Basar, Telangana - Grade: 9.01 / 10
 
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
+
 ## ***<u>Hobbies</u> 🧶***
-</div>
+1. Solving leetcode problems
+2. Exploring new technologies and understanding their use-cases in the real-world
 
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
+
 ## ***<u>Languages I know</u> 🧶***
 
 - **English** - Fluent
 - **Telugu** - Fluent (Native)
 - **Hindi** - Intermediate
-</div>
 
-<div style={{
-  padding: "1rem 1rem 0.5rem 1.8rem",
-  marginBottom: "1rem"
-}}>
+
 ## ***<u>Contact</u> 📬***
 
 - **Email:** [bnsapa2000@gmail.com](mailto:bnsapa2000@gmail.com)
@@ -133,5 +112,3 @@ This NLP project focuses on Named Entity Recognition (NER) tailored for the cybe
 - **GitHub:** [balnarendrasapa](https://github.com/balnarendrasapa)
 - **HuggingFace:** [bnsapa](https://huggingface.co/bnsapa)
 - **Kaggle:** [balnarendrasapa](https://www.kaggle.com/balnarendrasapa)
-
-</div>
